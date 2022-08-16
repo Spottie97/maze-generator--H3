@@ -18,7 +18,7 @@ namespace Maze_generator.Models
 
             var random = new Random();
 
-            while (sets.Count > 1 && edgesToCheck.Count > 0)
+            while (sets.Count > 1 && edgesToCheck.Count > 0 && sets.Count < 100 && edgesToCheck.Count < 100)
             {
                 // Pick a random edge
                 var edgeIndex = random.Next(edgesToCheck.Count);
